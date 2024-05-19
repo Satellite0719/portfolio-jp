@@ -1,13 +1,13 @@
 $(document).ready(function(){
     $(window).scroll(function(){
-        // sticky navbar on scroll script
+        // スクロール時に固定ナビゲーションバーのスクリプト
         if(this.scrollY > 20){
             $('.navbar').addClass("sticky");
         }else{
             $('.navbar').removeClass("sticky");
         }
         
-        // scroll-up button show/hide script
+        // スクロールアップボタンの表示/非表示スクリプト
         if(this.scrollY > 500){
             $('.scroll-up-btn').addClass("show");
         }else{
@@ -15,46 +15,46 @@ $(document).ready(function(){
         }
     });
 
-    // slide-up script
+    // スライドアップスクリプト
     $('.scroll-up-btn').click(function(){
         $('html').animate({scrollTop: 0});
-        // removing smooth scroll on slide-up button click
+        // スライドアップボタンをクリックしたときにスムーズスクロールを無効にする
         $('html').css("scrollBehavior", "auto");
     });
 
     $('.navbar .menu li a').click(function(){
-        // applying again smooth scroll on menu items click
+        // メニューアイテムをクリックしたときにスムーズスクロールを再適用する
         $('html').css("scrollBehavior", "smooth");
     });
 
-    // toggle menu/navbar script
+    // メニュー/ナビゲーションバースクリプトの切り替え
     $('.menu-btn').click(function(){
         $('.navbar .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
     });
 
-    // typing text animation script
+    // タイピングテキストアニメーションスクリプト
     var typed = new Typed(".typing", {
-        strings: ["AI Engineer", "Machine Learning Enthusiast", "AI Developer", "Data Scientist", "AI Researcher", "Tech Innovator"],
+        strings: ["AIエンジニア", "機械学習エンスージアスト", "AI開発者", "データサイエンティスト", "AI研究者", "技術革新者"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
     var typed = new Typed(".typing-3", {
-        strings: ["Connect with me on :)"],
+        strings: [":) で私とつながる"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["AI Engineer","Machine Learning Enthusiast" ,"AI Developer", "Data Scientist", "AI Researcher", "Tech Innovator"],
+        strings: ["AIエンジニア", "機械学習エンスージアスト", "AI開発者", "データサイエンティスト", "AI研究者", "技術革新者"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
-    // owl carousel script
+    // オウルカルーセルスクリプト
     $('.carousel').owlCarousel({
         margin: 20,
         loop: true,

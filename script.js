@@ -41,7 +41,7 @@ $(document).ready(function(){
         loop: true
     });
     var typed = new Typed(".typing-3", {
-        strings: [":) で私とつながる"],
+        strings: ["Connect with me"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true

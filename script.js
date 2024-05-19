@@ -35,7 +35,7 @@ $(document).ready(function(){
 
     // タイピングテキストアニメーションスクリプト
     var typed = new Typed(".typing", {
-        strings: ["AIエンジニア", "機械学習エンスージアスト", "AI開発者", "データサイエンティスト", "AI研究者", "技術革新者"],
+        strings: ["AIエンジニア", "機械学習エンジニア", "AI開発者", "データサイエンティスト", "AI研究者", "技術革新者"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
@@ -48,7 +48,7 @@ $(document).ready(function(){
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["AIエンジニア", "機械学習エンスージアスト", "AI開発者", "データサイエンティスト", "AI研究者", "技術革新者"],
+        strings: ["AIエンジニア", "機械学習エンジニア", "AI開発者", "データサイエンティスト", "AI研究者", "技術革新者"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
